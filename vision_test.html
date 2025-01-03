@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision & Mission</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #121212;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #e0c080;
+            text-transform: uppercase;
+        }
+        .line {
+            width: 200px;
+            height: 4px;
+            background: #e0c080;
+            margin: 10px auto;
+        }
+        .vision-section {
+            margin: 40px 0;
+        }
+        .vision-section h2 {
+            font-size: 2.5em;
+            color: #e0c080;
+        }
+        .vision-section p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #d3d3d3;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .vision-mission {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+        .card {
+            background: #1e1e1e;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            flex: 1 1 calc(33.333% - 40px);
+            max-width: calc(33.333% - 40px);
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+        }
+        .card h3 {
+            font-size: 1.8em;
+            color: #e0c080;
+        }
+        .card p {
+            color: #d3d3d3;
+            font-size: 1.1em;
+            margin-top: 15px;
+        }
+        /* Interactive Glow Button */
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            color: #ffffff;
+            background: #e0c080;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(224, 192, 128, 0.5);
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+        .btn:hover {
+            background: #ffd700;
+            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.8);
+        }
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .section {
+            animation: fadeIn 1s ease;
+        }
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            .section h2 {
+                font-size: 2em;
+            }
+            .section p {
+                font-size: 1em;
+            }
+            .card {
+                flex: 1 1 calc(50% - 20px);
+                max-width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+            .section h2 {
+                font-size: 1.8em;
+            }
+            .section p {
+                font-size: 0.9em;
+            }
+            .card {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Vision & Mission</h1>
+        <div class="line"></div>
+        <div class="vision-section vision">
+            <h2>Our Vision</h2>
+            <p>To be the epicentre of creativity and inquiry for the enrichment of human living.</p>
+        </div>
+        <div class="vision-section mission">
+            <h2>Our Mission</h2>
+            <p>To harness creative talents who are passionate in inspiring and generating innovative ideas and content for local and global creative multimedia industries and spearheading consistent collaborations with related industry players and academic institutions.</p>
+        </div>
+        <div class="vision-mission">
+            <div class="card">
+                <h3>Creativity</h3>
+                <p>Fostering innovative thinking to solve real-world challenges.</p>
+            </div>
+            <div class="card">
+                <h3>Collaboration</h3>
+                <p>Building strong partnerships with industries and academia.</p>
+            </div>
+            <div class="card">
+                <h3>Excellence</h3>
+                <p>Striving for excellence in every project and initiative.</p>
+            </div>
+        </div>
+        <button class="btn" onclick="showMore()">Explore More</button>
+    </div>
+
+    <script>
+        function showMore() {
+            alert("Thank you for exploring! More exciting features are coming soon!");
+        }
+    </script>
+</body>
+</html>
